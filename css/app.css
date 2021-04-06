@@ -102,7 +102,6 @@ h6 {
   height: 13%;
   text-align: center;
   margin-top: 3%;
-  text-shadow: 1px 1px #3f3d3d;
 }
 
 .header__wrapper .intro {
@@ -122,7 +121,6 @@ h6 {
   text-align: center;
   color: #ff9797;
   font-size: 6vmin;
-  text-shadow: 1px 1px #3f3d3d;
 }
 
 .header__wrapper .count__down .time__details {
@@ -132,7 +130,6 @@ h6 {
   color: #ff9797;
   font-size: 1, 5vmin;
   padding: 2%;
-  text-shadow: 1px 1px #3f3d3d;
 }
 
 .header__wrapper .form__email {
@@ -209,8 +206,72 @@ h6 {
 
 .main .left__main .about {
   width: 80%;
-  height: 100%;
+  height: 35%;
   margin-left: calc(50% - 40%);
+}
+
+.main .left__main .about .text__about {
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.main .left__main .graph {
+  width: 80%;
+  height: 50%;
+  font-size: 2vmin;
+  margin-left: calc(50% - 40%);
+  color: #bfbfbf;
+}
+
+.main .left__main .graph .container {
+  display: inline-block;
+  margin-top: 2%;
+  width: 100%;
+  height: 20%;
+}
+
+.main .left__main .graph .container .top {
+  display: inline-block;
+  width: 100%;
+  height: 35%;
+}
+
+.main .left__main .graph .container .top .label {
+  float: left;
+}
+
+.main .left__main .graph .container .top .percentage {
+  float: right;
+}
+
+.main .left__main .graph .container .bottom {
+  display: inline-block;
+  width: 100%;
+  height: 22%;
+  background-color: #e9e9e9;
+}
+
+.main .left__main .graph .container .bottom .bar {
+  display: inline-block;
+  height: 100%;
+  width: 80%;
+}
+
+.main .left__main .graph .container .bottom .bar .loader {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  background-color: #61a7a7;
+  animation: loading 3s forwards;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .main .right__main {
@@ -221,126 +282,158 @@ h6 {
 
 .main .right__main .questions {
   width: 80%;
+  height: 35%;
+  margin-left: calc(50% - 40%);
+}
+
+.main .right__main .questions .questions__text {
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.main .right__main .questions .form__questions {
+  display: inline-block;
+  width: 100%;
+  height: 20%;
+}
+
+.main .right__main .questions .form__questions .name {
+  float: left;
+  width: 50%;
+  padding-right: 2%;
+  margin-top: 20%;
+}
+
+.main .right__main .questions .form__questions .email {
+  float: left;
+  width: 50%;
+  padding-right: 2%;
+  margin-top: 20%;
+}
+
+.main .right__main .questions .form__questions .message {
+  width: 100%;
+  margin-top: 13%;
+  display: inline-block;
+}
+
+.main .right__main .questions .form__questions textarea {
+  border-bottom: 1px solid #bfbfbf;
+  width: 98%;
+  height: 100px;
+}
+
+.main .right__main .questions .form__questions textarea::placeholder {
+  font-size: 2vmin;
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+.main .right__main .questions .form__questions input {
+  padding: 1%;
+  background: transparent;
+  border-bottom: 1px solid #bfbfbf;
+  width: 100%;
+}
+
+.main .right__main .questions .form__questions input::placeholder {
+  font-size: 2vmin;
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+.main .right__main .questions .form__questions .send__button {
+  margin-top: 12%;
+  padding-right: 2%;
+  width: 100%;
   height: 100%;
+  text-align: right;
+  color: #ff9797;
 }
 
 footer {
   width: 100%;
   height: 35vh;
-  background-color: #4c8f8f;
+  background-color: #61a7a7;
 }
 
-/* Bar Graph Horizontal */
-.bar-graph .year {
-  animation: fade-in-text 2.2s 0.1s forwards;
-  opacity: 0;
+footer .footer__wrapper {
+  width: 80%;
+  height: 100%;
+  margin-left: calc(50% - 40%);
+  display: inline-block;
 }
 
-.bar-graph-horizontal {
-  max-width: 380px;
+footer .footer__wrapper .social__networks {
+  width: 90%;
+  height: 25%;
+  display: inline-block;
+  margin-left: calc(50% - 45%);
+  text-align: center;
+  margin-top: 1%;
+  border-bottom: 1px solid white;
+  font-size: 2.5vmin;
 }
 
-.bar-graph-horizontal > div {
+footer .footer__wrapper .company__name {
+  width: 90%;
+  height: 20%;
+  display: inline-block;
+  margin-left: calc(50% - 45%);
+  text-align: center;
+  margin-top: 1%;
+}
+
+footer .footer__wrapper .copyrights {
+  width: 44%;
+  height: 10%;
+  display: inline-block;
+  margin-left: calc(50% - 22%);
+  color: white;
+}
+
+footer .footer__wrapper .text__box {
+  width: calc(100%/3);
   float: left;
-  margin-bottom: 8px;
-  width: 100%;
+  padding: 1%;
+  letter-spacing: 1px;
 }
 
-.bar-graph-horizontal .year {
-  float: left;
-  margin-top: 18px;
-  width: 50px;
-}
-
-.bar-graph-horizontal .bar {
-  border-radius: 3px;
-  height: 55px;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  width: 0;
-}
-
-.bar-graph-one .bar::after {
-  animation: fade-in-text 2.2s 0.1s forwards;
-  color: #fff;
-  content: attr(data-percentage);
-  font-weight: 700;
-  position: absolute;
-  right: 16px;
-  top: 17px;
-}
-
-.bar-graph-one .bar-one .bar {
-  background-color: #64b2d1;
-  animation: show-bar-one 1.2s 0.1s forwards;
-}
-
-.bar-graph-one .bar-two .bar {
-  background-color: #5292ac;
-  animation: show-bar-two 1.2s 0.2s forwards;
-}
-
-.bar-graph-one .bar-three .bar {
-  background-color: #407286;
-  animation: show-bar-three 1.2s 0.3s forwards;
-}
-
-/* Bar Graph Horizontal Animations */
-@keyframes show-bar-one {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 69.6%;
-  }
-}
-
-@keyframes show-bar-two {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 71%;
-  }
-}
-
-@keyframes show-bar-three {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 74.7%;
-  }
-}
-
-@keyframes fade-in-text {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+footer .footer__wrapper .more__info {
+  text-align: center;
+  padding-top: 2%;
+  color: white;
+  letter-spacing: 1px;
 }
 
 h1 {
-  text-align: center;
   font-size: 7vmin;
   color: #ff9797;
-  text-shadow: 1px 1px #3f3d3d;
+}
+
+h2 {
+  font-size: 3.5vmin;
+  color: black;
+  font-weight: 500;
 }
 
 span {
-  color: #6fb9b9;
+  color: #ff9797;
 }
 
 p {
   display: inline-block;
   padding-top: 3%;
-  text-align: center;
   font-size: 2.5vmin;
   color: #bfbfbf;
+}
+
+.text__shadow {
   text-shadow: 1px 1px #3f3d3d;
+}
+
+.text__align {
+  text-align: center;
 }
 
 .font {
@@ -377,5 +470,4 @@ button {
   font-size: 2vmin;
   color: white;
   opacity: 1;
-  /* Firefox */
 }

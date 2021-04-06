@@ -1,21 +1,31 @@
 h1 {
-    text-align: center;
     font-size: 7vmin;
     color: #ff9797;
-    text-shadow: 1px 1px rgb(63, 61, 61);
+  }
+
+  h2 {
+      font-size: 3.5vmin;
+      color: black;
+      font-weight: 500;
   }
   
   span {
-      color: #6fb9b9;
+      color: #ff9797;
   }
   
   p {
     display: inline-block;
     padding-top: 3%;
-    text-align: center;
     font-size: 2.5vmin;
     color: #bfbfbf;
+  }
+
+  .text__shadow {
     text-shadow: 1px 1px rgb(63, 61, 61);
+  }
+
+  .text__align {
+      text-align: center;
   }
   
   .font {
@@ -51,6 +61,6 @@ h1 {
   ::placeholder {
       font-size: 2vmin;
       color: white;
-      opacity: 1; /* Firefox */
-    }
+      opacity: 1; 
+  }
   
