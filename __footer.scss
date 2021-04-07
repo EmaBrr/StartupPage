@@ -17,6 +17,12 @@ footer {
       margin-top: 1%;
       border-bottom: 1px solid white;
       font-size: $paragraph;
+      @media (max-width: $xxs) {
+        margin-top: 15%;
+        height: 18%;
+        width: 100%;
+        margin-left: 0;
+      }
       .social {
         color: white;
         padding: 2%;
@@ -32,6 +38,10 @@ footer {
       i {
         font-size: 40px;
         color: white;
+        @media (max-width: $xxs) {
+            font-size: 20px;
+            margin-top: 5%;
+          }
       }
     }
     .copyrights {
@@ -41,6 +51,11 @@ footer {
       margin-left: calc(50% - 22%);
       color: white;
       font-family: $mainfont;
+      font-size: $small;
+      @media (max-width: $xxs) {
+        width: 100%;
+        margin-left: 0;
+    }
     }
     .text__box {
       width: calc(100% / 3);
@@ -53,6 +68,7 @@ footer {
       text-align: center;
       padding-top: 2%;
       color: white;
+      font-size: $small;
       letter-spacing: 1px;
       font-family: $mainfont;
     }
