@@ -12,30 +12,30 @@
     text-align: center;
     margin-top: 3%;
     i {
-      text-shadow: 1px 1px rgb(63, 61, 61);
+      text-shadow: 1px 1px $textshadowcolor;
       font-size: 60px;
-      color: #ff9797;
+      color: $pink;
     }
   }
   .intro {
     width: 40%;
     margin-left: calc(50% - 20%);
     h1 {
-      font-family: "Raleway", sans-serif;
+      font-family: $mainfont;
       font-weight: bold;
       text-transform: uppercase;
-      font-size: 7vmin;
-      color: #ff9797;
+      font-size: $superlarge;
+      color: $pink;
       text-align: center;
-      text-shadow: 1px 1px rgb(63, 61, 61);
+      text-shadow: 1px 1px $textshadowcolor;
     }
     p {
-      font-family: "Raleway", sans-serif;
+      font-family: $mainfont;
       display: inline-block;
       padding-top: 3%;
-      font-size: 2.5vmin;
-      color: #bfbfbf;
-      text-shadow: 1px 1px rgb(63, 61, 61);
+      font-size: $paragraph;
+      color: $grey;
+      text-shadow: 1px 1px $textshadowcolor;
       text-align: center;
     }
   }
@@ -43,24 +43,24 @@
     width: 40%;
     margin-left: calc(50% - 20%);
     padding-top: 4%;
-    text-shadow: 1px 1px rgb(63, 61, 61);
+    text-shadow: 1px 1px $textshadowcolor;
     .time {
       width: calc(100% / 4);
       float: left;
       text-align: center;
-      color: #ff9797;
-      font-size: 6vmin;
-      font-family: "Raleway", sans-serif;
+      color: $pink;
+      font-size: $large;
+      font-family: $mainfont;
       font-weight: bold;
     }
     .time__details {
       width: calc(100% / 4);
       float: left;
       text-align: center;
-      color: #ff9797;
-      font-size: 1, 5vmin;
+      color: $pink;
+      font-size: $small;
       padding: 2%;
-      font-family: "Raleway", sans-serif;
+      font-family: $mainfont;
       text-transform: uppercase;
     }
   }
@@ -70,14 +70,14 @@
     margin-left: calc(50% - 20%);
     text-align: center;
     padding-top: 6.5%;
-    font-family: "Raleway", sans-serif;
+    font-family: $mainfont;
     input {
       padding: 1%;
       background: transparent;
       border-bottom: 1px solid white;
       width: 100%;
       &::placeholder {
-        font-size: 2vmin;
+        font-size: $medium;
         color: white;
         opacity: 1;
       }
@@ -88,16 +88,16 @@
     height: 12%;
     margin-left: calc(50% - 20%);
     text-align: center;
-    color: #ff9797;
-    font-family: "Raleway", sans-serif;
+    color: $pink;
+    font-family: $mainfont;
     button {
       width: 27%;
       border-radius: 3px;
-      background-color: #ff9797;
+      background-color: $pink;
       text-align: center;
       color: white;
       padding: 1.8%;
-      font-size: 2vmin;
+      font-size: $medium;
       box-shadow: 0px 5px 3px 0px rgba(104, 100, 100, 0.4);
     }
   }
