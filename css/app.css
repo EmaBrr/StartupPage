@@ -484,6 +484,7 @@ footer .footer__wrapper {
   height: 100%;
   margin-left: calc(50% - 40%);
   display: inline-block;
+  font-family: "Raleway", sans-serif;
 }
 
 footer .footer__wrapper .social__networks {
@@ -497,6 +498,11 @@ footer .footer__wrapper .social__networks {
   font-size: 2.5vmin;
 }
 
+footer .footer__wrapper .social__networks .social {
+  color: white;
+  padding: 2%;
+}
+
 footer .footer__wrapper .company__name {
   width: 90%;
   height: 20%;
@@ -504,6 +510,11 @@ footer .footer__wrapper .company__name {
   margin-left: calc(50% - 45%);
   text-align: center;
   margin-top: 1%;
+}
+
+footer .footer__wrapper .company__name i {
+  font-size: 40px;
+  color: white;
 }
 
 footer .footer__wrapper .copyrights {
@@ -515,7 +526,7 @@ footer .footer__wrapper .copyrights {
 }
 
 footer .footer__wrapper .text__box {
-  width: calc(100%/3);
+  width: calc(100% / 3);
   float: left;
   padding: 1%;
   letter-spacing: 1px;
@@ -526,4 +537,5 @@ footer .footer__wrapper .more__info {
   padding-top: 2%;
   color: white;
   letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
 }
