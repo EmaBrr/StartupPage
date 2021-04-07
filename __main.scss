@@ -164,7 +164,7 @@
             padding-top: 6%;
           }
           @media (max-width: $xxs) {
-            padding-top: 33%;
+            padding-top: 12%;
           }
           .name {
             float: left;
@@ -209,7 +209,7 @@
               width: 98%;
               height: 100px;
               @media (max-width: $xxs) {
-                height: 70px;
+                height: 65px;
               }
               &::placeholder {
                 font-size: $medium;

@@ -54,6 +54,7 @@
       text-shadow: 1px 1px $textshadowcolor;
       @media (max-width: $s) {
         font-size: $extralarge;
+        margin-top: 2%;
       }
     }
     p {

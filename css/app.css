@@ -170,6 +170,7 @@ h6 {
 @media (max-width: 720px) {
   .introduction__wrapper .intro h1 {
     font-size: 9vmin;
+    margin-top: 2%;
   }
 }
 
@@ -647,7 +648,7 @@ h6 {
 
 @media (max-width: 400px) {
   .main .main__wrapper .right__main .questions .form__questions {
-    padding-top: 33%;
+    padding-top: 12%;
   }
 }
 
@@ -705,7 +706,7 @@ h6 {
 
 @media (max-width: 400px) {
   .main .main__wrapper .right__main .questions .form__questions .message textarea {
-    height: 70px;
+    height: 65px;
   }
 }
 
