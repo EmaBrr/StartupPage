@@ -272,6 +272,22 @@ h6 {
   display: inline-block;
 }
 
+.main .left__main .about .text__about h2 {
+  font-size: 3.5vmin;
+  color: black;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+.main .left__main .about .text__about p {
+  display: inline-block;
+  padding-top: 3%;
+  font-size: 2.5vmin;
+  color: #bfbfbf;
+  font-family: "Raleway", sans-serif;
+}
+
 .main .left__main .graph {
   width: 80%;
   height: 50%;
@@ -295,10 +311,12 @@ h6 {
 
 .main .left__main .graph .container .top .label {
   float: left;
+  font-family: "Raleway", sans-serif;
 }
 
 .main .left__main .graph .container .top .percentage {
   float: right;
+  font-family: "Raleway", sans-serif;
 }
 
 .main .left__main .graph .container .bottom {
@@ -348,10 +366,27 @@ h6 {
   display: inline-block;
 }
 
+.main .right__main .questions .questions__text h2 {
+  font-size: 3.5vmin;
+  color: black;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+.main .right__main .questions .questions__text p {
+  display: inline-block;
+  padding-top: 3%;
+  font-size: 2.5vmin;
+  color: #bfbfbf;
+  font-family: "Raleway", sans-serif;
+}
+
 .main .right__main .questions .form__questions {
   display: inline-block;
   width: 100%;
   height: 20%;
+  font-family: "Raleway", sans-serif;
 }
 
 .main .right__main .questions .form__questions .name {
@@ -361,11 +396,37 @@ h6 {
   margin-top: 20%;
 }
 
+.main .right__main .questions .form__questions .name input {
+  padding: 1%;
+  background: transparent;
+  border-bottom: 1px solid #bfbfbf;
+  width: 100%;
+}
+
+.main .right__main .questions .form__questions .name input::placeholder {
+  font-size: 2vmin;
+  color: #bfbfbf;
+  opacity: 1;
+}
+
 .main .right__main .questions .form__questions .email {
   float: left;
   width: 50%;
   padding-right: 2%;
   margin-top: 20%;
+}
+
+.main .right__main .questions .form__questions .email input {
+  padding: 1%;
+  background: transparent;
+  border-bottom: 1px solid #bfbfbf;
+  width: 100%;
+}
+
+.main .right__main .questions .form__questions .email input::placeholder {
+  font-size: 2vmin;
+  color: #bfbfbf;
+  opacity: 1;
 }
 
 .main .right__main .questions .form__questions .message {
@@ -374,26 +435,13 @@ h6 {
   display: inline-block;
 }
 
-.main .right__main .questions .form__questions textarea {
+.main .right__main .questions .form__questions .message textarea {
   border-bottom: 1px solid #bfbfbf;
   width: 98%;
   height: 100px;
 }
 
-.main .right__main .questions .form__questions textarea::placeholder {
-  font-size: 2vmin;
-  color: #bfbfbf;
-  opacity: 1;
-}
-
-.main .right__main .questions .form__questions input {
-  padding: 1%;
-  background: transparent;
-  border-bottom: 1px solid #bfbfbf;
-  width: 100%;
-}
-
-.main .right__main .questions .form__questions input::placeholder {
+.main .right__main .questions .form__questions .message textarea::placeholder {
   font-size: 2vmin;
   color: #bfbfbf;
   opacity: 1;
@@ -406,6 +454,23 @@ h6 {
   height: 100%;
   text-align: right;
   color: #ff9797;
+  font-family: "Raleway", sans-serif;
+}
+
+.main .right__main .questions .form__questions .send__button button {
+  width: 27%;
+  border-radius: 3px;
+  background-color: #ff9797;
+  text-align: center;
+  color: white;
+  padding: 1.8%;
+  font-size: 2vmin;
+  box-shadow: 0px 5px 3px 0px rgba(104, 100, 100, 0.4);
+}
+
+span {
+  color: #ff9797;
+  font-family: "Raleway", sans-serif;
 }
 
 footer {
