@@ -8,6 +8,10 @@ footer {
     margin-left: calc(50% - 40%);
     display: inline-block;
     font-family: $mainfont;
+    @media (max-width: $xxs) {
+        width: 90%;
+        margin-left: calc(50% - 45%);
+      }
     .social__networks {
       width: 90%;
       height: 25%;
@@ -63,6 +67,7 @@ footer {
       padding: 1%;
       letter-spacing: 1px;
       font-family: $mainfont;
+      font-size: $small;
     }
     .more__info {
       text-align: center;
