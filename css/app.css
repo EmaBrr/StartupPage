@@ -523,6 +523,7 @@ footer .footer__wrapper .copyrights {
   display: inline-block;
   margin-left: calc(50% - 22%);
   color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 footer .footer__wrapper .text__box {
@@ -530,6 +531,7 @@ footer .footer__wrapper .text__box {
   float: left;
   padding: 1%;
   letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
 }
 
 footer .footer__wrapper .more__info {
