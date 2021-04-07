@@ -4,6 +4,7 @@
   background-image: url(../img/GreenBuilding.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   .icon {
     display: inline-block;
     width: 40%;
@@ -11,6 +12,21 @@
     margin-left: calc(50% - 20%);
     text-align: center;
     margin-top: 3%;
+    @media (max-width: $xl) {
+      width: 60%;
+      margin-left: calc(50% - 30%);
+    }
+    @media (max-width: $l) {
+      margin-top: 6%;
+    }
+    @media (max-width: $m) {
+      width: 70%;
+      margin-left: calc(50% - 35%);
+      margin-top: 7%;
+    }
+    @media (max-width: $s) {
+      margin-top: 17%;
+    }
     i {
       text-shadow: 1px 1px $textshadowcolor;
       font-size: 60px;
@@ -20,6 +36,14 @@
   .intro {
     width: 40%;
     margin-left: calc(50% - 20%);
+    @media (max-width: $xl) {
+      width: 60%;
+      margin-left: calc(50% - 30%);
+    }
+    @media (max-width: $m) {
+      width: 70%;
+      margin-left: calc(50% - 35%);
+    }
     h1 {
       font-family: $mainfont;
       font-weight: bold;
@@ -28,6 +52,9 @@
       color: $pink;
       text-align: center;
       text-shadow: 1px 1px $textshadowcolor;
+      @media (max-width: $s) {
+        font-size: $extralarge;
+      }
     }
     p {
       font-family: $mainfont;
@@ -37,6 +64,10 @@
       color: $grey;
       text-shadow: 1px 1px $textshadowcolor;
       text-align: center;
+      @media (max-width: $s) {
+        padding-top: 10%;
+        font-size: $h2;
+      }
     }
   }
   .count__down {
@@ -44,6 +75,14 @@
     margin-left: calc(50% - 20%);
     padding-top: 4%;
     text-shadow: 1px 1px $textshadowcolor;
+    @media (max-width: $xl) {
+      width: 60%;
+      margin-left: calc(50% - 30%);
+    }
+    @media (max-width: $m) {
+      width: 70%;
+      margin-left: calc(50% - 35%);
+    }
     .time {
       width: calc(100% / 4);
       float: left;
@@ -52,6 +91,11 @@
       font-size: $large;
       font-family: $mainfont;
       font-weight: bold;
+      padding: 1%;
+      @media (max-width: $s) {
+        padding-top: 8%;
+        font-size: $extralarge;
+      }
     }
     .time__details {
       width: calc(100% / 4);
@@ -62,6 +106,10 @@
       padding: 2%;
       font-family: $mainfont;
       text-transform: uppercase;
+      @media (max-width: $s) {
+        padding-top: 5%;
+        font-size: $paragraph;
+      }
     }
   }
   .form__email {
@@ -71,6 +119,22 @@
     text-align: center;
     padding-top: 6.5%;
     font-family: $mainfont;
+    @media (max-width: $xl) {
+      width: 60%;
+      margin-left: calc(50% - 30%);
+      padding-top: 10%;
+    }
+    @media (max-width: $l) {
+      padding-top: 12%;
+    }
+    @media (max-width: $m) {
+      width: 70%;
+      margin-left: calc(50% - 35%);
+      padding-top: 15%;
+    }
+    @media (max-width: $s) {
+      padding-top: 25%;
+    }
     input {
       padding: 1%;
       background: transparent;
@@ -80,6 +144,9 @@
         font-size: $medium;
         color: white;
         opacity: 1;
+        @media (max-width: $s) {
+            font-size: $paragraph;
+          }
       }
     }
   }
@@ -90,6 +157,17 @@
     text-align: center;
     color: $pink;
     font-family: $mainfont;
+    @media (max-width: $xl) {
+      width: 60%;
+      margin-left: calc(50% - 30%);
+    }
+    @media (max-width: $m) {
+      width: 70%;
+      margin-left: calc(50% - 35%);
+    }
+    @media (max-width: $s) {
+      padding-top: 3%;
+    }
     button {
       width: 27%;
       border-radius: 3px;
@@ -99,6 +177,10 @@
       padding: 1.8%;
       font-size: $medium;
       box-shadow: 0px 5px 3px 0px rgba(104, 100, 100, 0.4);
+      @media (max-width: $s) {
+        width: 40%;
+        font-size: $h2;
+      }
     }
   }
   .mouse__animation {
@@ -106,6 +188,14 @@
     height: 10%;
     margin-left: calc(50% - 20%);
     text-align: center;
+    @media (max-width: $xl) {
+      width: 60%;
+      margin-left: calc(50% - 30%);
+    }
+    @media (max-width: $m) {
+      width: 70%;
+      margin-left: calc(50% - 35%);
+    }
     .mouse {
       width: 30px;
       height: 50px;
