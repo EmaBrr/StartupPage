@@ -264,7 +264,7 @@ h6 {
 
 .main .main__wrapper {
   width: 90%;
-  height: 80%;
+  height: 88%;
   margin-left: calc(50% - 45%);
   margin-top: 5%;
 }
@@ -273,7 +273,6 @@ h6 {
   width: 55%;
   height: 100%;
   float: left;
-  border: 1px solid green;
 }
 
 .main .main__wrapper .left__main .about {
@@ -361,15 +360,14 @@ h6 {
 .main .main__wrapper .right__main {
   width: 45%;
   height: 100%;
-  margin-left: 55%;
-  border: 1px solid red;
+  display: inline-block;
 }
 
 .main .main__wrapper .right__main .questions {
-  width: 80%;
+  width: 90%;
   height: 30%;
   margin-top: 30px;
-  margin-left: calc(50% - 40%);
+  margin-left: calc(50% - 45%);
 }
 
 .main .main__wrapper .right__main .questions h2 {
@@ -387,88 +385,83 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-.main .main__wrapper .right__main .questions .form__questions {
-  width: 100%;
-  height: 30%;
+.main .main__wrapper .right__main .form__questions {
+  width: 90%;
+  height: 60%;
+  font-size: 2vmin;
+  margin-left: calc(50% - 45%);
+  color: #bfbfbf;
   font-family: "Raleway", sans-serif;
-  border: 1px solid red;
 }
 
-.main .main__wrapper .right__main .questions .form__questions .name {
+.main .main__wrapper .right__main .form__questions .name {
   float: left;
   width: 50%;
-  padding-right: 2%;
-  margin-top: 20%;
+  padding: 2%;
+  margin-top: 3%;
 }
 
-.main .main__wrapper .right__main .questions .form__questions .name input {
+.main .main__wrapper .right__main .form__questions .name input {
+  padding: 1%;
+  background: transparent;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.main .main__wrapper .right__main .form__questions .name input::placeholder {
+  font-size: 2vmin;
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+.main .main__wrapper .right__main .form__questions .email {
+  float: left;
+  width: 50%;
+  padding: 2%;
+  margin-top: 3%;
+}
+
+.main .main__wrapper .right__main .form__questions .email input {
   padding: 1%;
   background: transparent;
   border-bottom: 1px solid #bfbfbf;
   width: 100%;
 }
 
-.main .main__wrapper .right__main .questions .form__questions .name input::placeholder {
+.main .main__wrapper .right__main .form__questions .email input::placeholder {
   font-size: 2vmin;
   color: #bfbfbf;
   opacity: 1;
 }
 
-.main .main__wrapper .right__main .questions .form__questions .email {
-  float: left;
-  width: 50%;
-  padding-right: 2%;
-  margin-top: 20%;
-}
-
-.main .main__wrapper .right__main .questions .form__questions .email input {
-  padding: 1%;
-  background: transparent;
-  border-bottom: 1px solid #bfbfbf;
+.main .main__wrapper .right__main .form__questions .message {
   width: 100%;
-}
-
-.main .main__wrapper .right__main .questions .form__questions .email input::placeholder {
-  font-size: 2vmin;
-  color: #bfbfbf;
-  opacity: 1;
-}
-
-.main .main__wrapper .right__main .questions .form__questions .message {
-  width: 100%;
-  margin-top: 13%;
+  margin-top: 10%;
+  padding: 2%;
   display: inline-block;
 }
 
-.main .main__wrapper .right__main .questions .form__questions .message textarea {
+.main .main__wrapper .right__main .form__questions .message textarea {
   border-bottom: 1px solid #bfbfbf;
   width: 98%;
   height: 100px;
 }
 
-@media (max-width: 400px) {
-  .main .main__wrapper .right__main .questions .form__questions .message textarea {
-    height: 60px;
-  }
-}
-
-.main .main__wrapper .right__main .questions .form__questions .message textarea::placeholder {
+.main .main__wrapper .right__main .form__questions .message textarea::placeholder {
   font-size: 2vmin;
   color: #bfbfbf;
   opacity: 1;
 }
 
-.main .main__wrapper .right__main .questions .form__questions .send__button {
-  margin-top: 12%;
-  padding-right: 2%;
+.main .main__wrapper .right__main .form__questions .send__button {
+  margin-top: 7%;
+  padding: 2%;
   width: 100%;
-  height: 100%;
   text-align: right;
   color: #ff9797;
   font-family: "Raleway", sans-serif;
 }
 
-.main .main__wrapper .right__main .questions .form__questions .send__button button {
+.main .main__wrapper .right__main .form__questions .send__button button {
   width: 27%;
   border-radius: 3px;
   background-color: #ff9797;
@@ -477,20 +470,6 @@ h6 {
   padding: 1.8%;
   font-size: 2vmin;
   box-shadow: 0px 5px 3px 0px rgba(104, 100, 100, 0.4);
-}
-
-@media (max-width: 1542px) {
-  .main .main__wrapper .right__main .questions .form__questions .send__button button {
-    width: 35%;
-  }
-}
-
-@media (max-width: 400px) {
-  .main .main__wrapper .right__main .questions .form__questions .send__button button {
-    width: 45%;
-    height: 20px;
-    box-shadow: 0px 2px 1px 1px rgba(104, 100, 100, 0.4);
-  }
 }
 
 span {
