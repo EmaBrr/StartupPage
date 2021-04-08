@@ -659,6 +659,13 @@ footer .footer__wrapper {
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 920px) {
+  footer .footer__wrapper {
+    width: 90%;
+    margin-left: calc(50% - 45%);
+  }
+}
+
 footer .footer__wrapper .social__networks {
   width: 90%;
   height: 30%;
@@ -670,10 +677,22 @@ footer .footer__wrapper .social__networks {
   font-size: 2.5vmin;
 }
 
+@media (max-width: 920px) {
+  footer .footer__wrapper .social__networks {
+    height: 20%;
+  }
+}
+
 footer .footer__wrapper .social__networks .social {
   color: white;
   padding: 1.5%;
   font-size: 30px;
+}
+
+@media (max-width: 920px) {
+  footer .footer__wrapper .social__networks .social {
+    font-size: 20px;
+  }
 }
 
 footer .footer__wrapper .company__name {
@@ -685,10 +704,22 @@ footer .footer__wrapper .company__name {
   margin-top: 1%;
 }
 
+@media (max-width: 920px) {
+  footer .footer__wrapper .company__name {
+    height: 20%;
+  }
+}
+
 footer .footer__wrapper .company__name i {
   font-size: 50px;
   padding: 1.2%;
   color: white;
+}
+
+@media (max-width: 920px) {
+  footer .footer__wrapper .company__name i {
+    font-size: 40px;
+  }
 }
 
 footer .footer__wrapper .copyrights {
@@ -701,6 +732,13 @@ footer .footer__wrapper .copyrights {
   font-size: 1.5vmin;
 }
 
+@media (max-width: 920px) {
+  footer .footer__wrapper .copyrights {
+    width: 80%;
+    margin-left: calc(50% - 40%);
+  }
+}
+
 footer .footer__wrapper .text__box {
   width: calc(100% / 3);
   min-width: 150px;
@@ -709,6 +747,12 @@ footer .footer__wrapper .text__box {
   letter-spacing: 1px;
   font-family: "Raleway", sans-serif;
   font-size: 1.5vmin;
+}
+
+@media (max-width: 920px) {
+  footer .footer__wrapper .text__box {
+    min-width: 50px;
+  }
 }
 
 footer .footer__wrapper .more__info {
