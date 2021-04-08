@@ -722,6 +722,13 @@ footer .footer__wrapper .company__name i {
   }
 }
 
+@media (max-width: 481px) {
+  footer .footer__wrapper .company__name i {
+    font-size: 30px;
+    padding: 2%;
+  }
+}
+
 footer .footer__wrapper .copyrights {
   width: 55%;
   height: 10%;
