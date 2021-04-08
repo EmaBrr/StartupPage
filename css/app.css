@@ -650,6 +650,12 @@ footer {
   background-color: #61a7a7;
 }
 
+@media (max-width: 481px) {
+  footer {
+    height: 25vh;
+  }
+}
+
 footer .footer__wrapper {
   width: 80%;
   height: 85%;
@@ -707,6 +713,12 @@ footer .footer__wrapper .company__name {
 @media (max-width: 920px) {
   footer .footer__wrapper .company__name {
     height: 20%;
+  }
+}
+
+@media (max-width: 481px) {
+  footer .footer__wrapper .company__name {
+    height: 35%;
   }
 }
 

@@ -3,6 +3,9 @@ footer {
   height: 35vh;
   display: inline-block;
   background-color: $mintcolor;
+  @media (max-width: $xs) {
+    height: 25vh;
+  }
   .footer__wrapper {
     width: 80%;
     height: 85%;
@@ -44,6 +47,9 @@ footer {
       margin-top: 1%;
       @media (max-width: $s) {
         height: 20%;
+      }
+      @media (max-width: $xs) {
+        height: 35%;
       }
       i {
         font-size: 50px;
