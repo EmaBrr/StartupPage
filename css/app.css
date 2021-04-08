@@ -104,6 +104,22 @@ h6 {
   margin-left: calc(50% - 25%);
 }
 
+@media (max-width: 1267px) {
+  .introduction .introduction__wrapper {
+    margin-top: 8%;
+    width: 80%;
+    margin-left: calc(50% - 40%);
+  }
+}
+
+@media (max-width: 481px) {
+  .introduction .introduction__wrapper {
+    margin-top: 12%;
+    width: 95%;
+    margin-left: calc(50% - 47.5%);
+  }
+}
+
 .introduction .introduction__wrapper .icon {
   display: inline-block;
   width: 100%;
@@ -115,6 +131,18 @@ h6 {
   text-shadow: 1px 1px #3f3d3d;
   font-size: 60px;
   color: #ff9797;
+}
+
+@media (max-width: 1267px) {
+  .introduction .introduction__wrapper .icon i {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 481px) {
+  .introduction .introduction__wrapper .icon i {
+    font-size: 70px;
+  }
 }
 
 .introduction .introduction__wrapper .intro {
@@ -131,14 +159,33 @@ h6 {
   text-shadow: 1px 1px #3f3d3d;
 }
 
+@media (max-width: 1267px) {
+  .introduction .introduction__wrapper .intro h1 {
+    font-size: 9vmin;
+  }
+}
+
+@media (max-width: 481px) {
+  .introduction .introduction__wrapper .intro h1 {
+    padding: 4%;
+  }
+}
+
 .introduction .introduction__wrapper .intro p {
+  width: 100%;
   font-family: "Raleway", sans-serif;
   display: inline-block;
-  padding-top: 4%;
+  padding: 4%;
   font-size: 2.5vmin;
   color: #bfbfbf;
   text-shadow: 1px 1px #3f3d3d;
   text-align: center;
+}
+
+@media (max-width: 481px) {
+  .introduction .introduction__wrapper .intro p {
+    font-size: 3.5vmin;
+  }
 }
 
 .introduction .introduction__wrapper .count__down {
@@ -146,6 +193,12 @@ h6 {
   margin-left: calc(50% - 40%);
   margin-top: 5%;
   text-shadow: 1px 1px #3f3d3d;
+}
+
+@media (max-width: 481px) {
+  .introduction .introduction__wrapper .count__down {
+    padding-top: 5%;
+  }
 }
 
 .introduction .introduction__wrapper .count__down .time {
@@ -159,6 +212,12 @@ h6 {
   padding: 1%;
 }
 
+@media (max-width: 1267px) {
+  .introduction .introduction__wrapper .count__down .time {
+    font-size: 9vmin;
+  }
+}
+
 .introduction .introduction__wrapper .count__down .time__details {
   width: calc(100% / 4);
   float: left;
@@ -170,6 +229,12 @@ h6 {
   text-transform: uppercase;
 }
 
+@media (max-width: 481px) {
+  .introduction .introduction__wrapper .count__down .time__details {
+    font-size: 2.5vmin;
+  }
+}
+
 .introduction .introduction__wrapper .form__email {
   width: 80%;
   height: 25%;
@@ -179,6 +244,19 @@ h6 {
   padding-top: 10%;
   display: inline-block;
   font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 1267px) {
+  .introduction .introduction__wrapper .form__email {
+    margin-top: 6%;
+  }
+}
+
+@media (max-width: 481px) {
+  .introduction .introduction__wrapper .form__email {
+    padding-top: 12%;
+    height: 20%;
+  }
 }
 
 .introduction .introduction__wrapper .form__email input {
@@ -194,6 +272,12 @@ h6 {
   opacity: 1;
 }
 
+@media (max-width: 481px) {
+  .introduction .introduction__wrapper .form__email input::placeholder {
+    font-size: 2.5vmin;
+  }
+}
+
 .introduction .introduction__wrapper .submit__button {
   width: 100%;
   height: 12%;
@@ -203,7 +287,6 @@ h6 {
 }
 
 .introduction .introduction__wrapper .submit__button button {
-  width: 22%;
   border-radius: 3px;
   background-color: #ff9797;
   text-align: center;
@@ -211,6 +294,12 @@ h6 {
   padding: 1.8%;
   font-size: 2vmin;
   box-shadow: 0px 5px 3px 0px rgba(104, 100, 100, 0.4);
+}
+
+@media (max-width: 481px) {
+  .introduction .introduction__wrapper .submit__button button {
+    font-size: 3.5vmin;
+  }
 }
 
 .introduction .introduction__wrapper .mouse__animation {
@@ -269,10 +358,26 @@ h6 {
   margin-top: 5%;
 }
 
+@media (max-width: 920px) {
+  .main .main__wrapper {
+    height: 100vh;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 .main .main__wrapper .left__main {
   width: 55%;
   height: 100%;
   float: left;
+}
+
+@media (max-width: 920px) {
+  .main .main__wrapper .left__main {
+    width: 100%;
+    float: none;
+    height: 40vh;
+  }
 }
 
 .main .main__wrapper .left__main .about {
@@ -303,6 +408,12 @@ h6 {
   font-size: 2vmin;
   margin-left: calc(50% - 40%);
   color: #bfbfbf;
+}
+
+@media (max-width: 920px) {
+  .main .main__wrapper .left__main .graph {
+    height: 27vh;
+  }
 }
 
 .main .main__wrapper .left__main .graph .container {
@@ -363,11 +474,27 @@ h6 {
   display: inline-block;
 }
 
+@media (max-width: 920px) {
+  .main .main__wrapper .right__main {
+    width: 100%;
+    float: none;
+    height: 40%;
+  }
+}
+
 .main .main__wrapper .right__main .questions {
   width: 90%;
   height: 30%;
   margin-top: 30px;
   margin-left: calc(50% - 45%);
+}
+
+@media (max-width: 920px) {
+  .main .main__wrapper .right__main .questions {
+    width: 80%;
+    margin-left: calc(50% - 40%);
+    margin-top: 0px;
+  }
 }
 
 .main .main__wrapper .right__main .questions h2 {
@@ -394,11 +521,25 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 920px) {
+  .main .main__wrapper .right__main .form__questions {
+    width: 80%;
+    margin-left: calc(50% - 40%);
+    margin-top: 3%;
+  }
+}
+
 .main .main__wrapper .right__main .form__questions .name {
   float: left;
   width: 50%;
   padding: 2%;
   margin-top: 3%;
+}
+
+@media (max-width: 920px) {
+  .main .main__wrapper .right__main .form__questions .name {
+    padding: 2% 0 0 0;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .name input {
@@ -418,6 +559,12 @@ h6 {
   width: 50%;
   padding: 2%;
   margin-top: 3%;
+}
+
+@media (max-width: 920px) {
+  .main .main__wrapper .right__main .form__questions .email {
+    padding: 2% 0 0 0;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .email input {
@@ -440,10 +587,24 @@ h6 {
   display: inline-block;
 }
 
+@media (max-width: 920px) {
+  .main .main__wrapper .right__main .form__questions .message {
+    margin-top: 0;
+    padding: 3% 0 0 0;
+  }
+}
+
 .main .main__wrapper .right__main .form__questions .message textarea {
   border-bottom: 1px solid #bfbfbf;
   width: 98%;
   height: 100px;
+}
+
+@media (max-width: 920px) {
+  .main .main__wrapper .right__main .form__questions .message textarea {
+    width: 100%;
+    height: 70px;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .message textarea::placeholder {
@@ -461,8 +622,13 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 920px) {
+  .main .main__wrapper .right__main .form__questions .send__button {
+    margin-top: 3%;
+  }
+}
+
 .main .main__wrapper .right__main .form__questions .send__button button {
-  width: 27%;
   border-radius: 3px;
   background-color: #ff9797;
   text-align: center;
@@ -480,27 +646,22 @@ span {
 footer {
   width: 100%;
   height: 35vh;
+  display: inline-block;
   background-color: #61a7a7;
 }
 
 footer .footer__wrapper {
   width: 80%;
-  height: 100%;
+  height: 85%;
+  margin-top: 1%;
   margin-left: calc(50% - 40%);
   display: inline-block;
   font-family: "Raleway", sans-serif;
 }
 
-@media (max-width: 400px) {
-  footer .footer__wrapper {
-    width: 90%;
-    margin-left: calc(50% - 45%);
-  }
-}
-
 footer .footer__wrapper .social__networks {
   width: 90%;
-  height: 25%;
+  height: 30%;
   display: inline-block;
   margin-left: calc(50% - 45%);
   text-align: center;
@@ -509,23 +670,15 @@ footer .footer__wrapper .social__networks {
   font-size: 2.5vmin;
 }
 
-@media (max-width: 400px) {
-  footer .footer__wrapper .social__networks {
-    margin-top: 15%;
-    height: 18%;
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
 footer .footer__wrapper .social__networks .social {
   color: white;
-  padding: 2%;
+  padding: 1.5%;
+  font-size: 30px;
 }
 
 footer .footer__wrapper .company__name {
   width: 90%;
-  height: 20%;
+  height: 30%;
   display: inline-block;
   margin-left: calc(50% - 45%);
   text-align: center;
@@ -533,36 +686,24 @@ footer .footer__wrapper .company__name {
 }
 
 footer .footer__wrapper .company__name i {
-  font-size: 40px;
+  font-size: 50px;
+  padding: 1.2%;
   color: white;
 }
 
-@media (max-width: 400px) {
-  footer .footer__wrapper .company__name i {
-    font-size: 20px;
-    margin-top: 5%;
-  }
-}
-
 footer .footer__wrapper .copyrights {
-  width: 44%;
+  width: 55%;
   height: 10%;
   display: inline-block;
-  margin-left: calc(50% - 22%);
+  margin-left: calc(50% - 27.5%);
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.5vmin;
 }
 
-@media (max-width: 400px) {
-  footer .footer__wrapper .copyrights {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
 footer .footer__wrapper .text__box {
   width: calc(100% / 3);
+  min-width: 150px;
   float: left;
   padding: 1%;
   letter-spacing: 1px;
@@ -571,8 +712,10 @@ footer .footer__wrapper .text__box {
 }
 
 footer .footer__wrapper .more__info {
+  width: 80%;
+  margin-top: 2%;
   text-align: center;
-  padding-top: 2%;
+  margin-left: calc(50% - 40%);
   color: white;
   font-size: 1.5vmin;
   letter-spacing: 1px;

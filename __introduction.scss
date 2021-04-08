@@ -11,6 +11,16 @@
     height: 90%;
     margin-top: 3%;
     margin-left: calc(50% - 25%);
+    @media (max-width: $m2) {
+      margin-top: 8%;
+      width: 80%;
+      margin-left: calc(50% - 40%);
+    }
+    @media (max-width: $xs) {
+      margin-top: 12%;
+      width: 95%;
+      margin-left: calc(50% - 47.5%);
+    }
     .icon {
       display: inline-block;
       width: 100%;
@@ -20,6 +30,12 @@
         text-shadow: 1px 1px $textshadowcolor;
         font-size: 60px;
         color: $pink;
+        @media (max-width: $m2) {
+          font-size: 80px;
+        }
+        @media (max-width: $xs) {
+          font-size: 70px;
+        }
       }
     }
     .intro {
@@ -32,15 +48,25 @@
         color: $pink;
         text-align: center;
         text-shadow: 1px 1px $textshadowcolor;
+        @media (max-width: $m2) {
+          font-size: $extralarge;
+        }
+        @media (max-width: $xs) {
+          padding: 4%;
+        }
       }
       p {
+        width: 100%;
         font-family: $mainfont;
         display: inline-block;
-        padding-top: 4%;
+        padding: 4%;
         font-size: $paragraph;
         color: $grey;
         text-shadow: 1px 1px $textshadowcolor;
         text-align: center;
+        @media (max-width: $xs) {
+          font-size: $h2;
+        }
       }
     }
     .count__down {
@@ -48,6 +74,9 @@
       margin-left: calc(50% - 40%);
       margin-top: 5%;
       text-shadow: 1px 1px $textshadowcolor;
+      @media (max-width: $xs) {
+        padding-top: 5%;
+      }
       .time {
         width: calc(100% / 4);
         float: left;
@@ -57,6 +86,9 @@
         font-family: $mainfont;
         font-weight: bold;
         padding: 1%;
+        @media (max-width: $m2) {
+          font-size: $extralarge;
+        }
       }
       .time__details {
         width: calc(100% / 4);
@@ -67,6 +99,9 @@
         padding: 2%;
         font-family: $mainfont;
         text-transform: uppercase;
+        @media (max-width: $xs) {
+          font-size: $paragraph;
+        }
       }
     }
     .form__email {
@@ -78,6 +113,13 @@
       padding-top: 10%;
       display: inline-block;
       font-family: $mainfont;
+      @media (max-width: $m2) {
+        margin-top: 6%;
+      }
+      @media (max-width: $xs) {
+        padding-top: 12%;
+        height: 20%;
+      }
       input {
         padding: 1%;
         background: transparent;
@@ -87,6 +129,9 @@
           font-size: $medium;
           color: white;
           opacity: 1;
+          @media (max-width: $xs) {
+            font-size: $paragraph;
+          }
         }
       }
     }
@@ -97,7 +142,6 @@
       color: $pink;
       font-family: $mainfont;
       button {
-        width: 22%;
         border-radius: 3px;
         background-color: $pink;
         text-align: center;
@@ -105,6 +149,9 @@
         padding: 1.8%;
         font-size: $medium;
         box-shadow: 0px 5px 3px 0px rgba(104, 100, 100, 0.4);
+        @media (max-width: $xs) {
+          font-size: $h2;
+        }
       }
     }
     .mouse__animation {
