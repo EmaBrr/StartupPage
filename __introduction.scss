@@ -1,231 +1,146 @@
-.introduction__wrapper {
+.introduction {
   width: 100%;
   height: 100vh;
   background-image: url(../img/GreenBuilding.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  .icon {
+  .introduction__wrapper {
     display: inline-block;
-    width: 40%;
-    height: 13%;
-    margin-left: calc(50% - 20%);
-    text-align: center;
+    width: 50%;
+    height: 90%;
     margin-top: 3%;
-    @media (max-width: $xl) {
-      width: 60%;
-      margin-left: calc(50% - 30%);
-    }
-    @media (max-width: $l) {
-      margin-top: 6%;
-    }
-    @media (max-width: $m) {
-      width: 70%;
-      margin-left: calc(50% - 35%);
-      margin-top: 7%;
-    }
-    @media (max-width: $s) {
-      margin-top: 17%;
-    }
-    i {
-      text-shadow: 1px 1px $textshadowcolor;
-      font-size: 60px;
-      color: $pink;
-    }
-  }
-  .intro {
-    width: 40%;
-    margin-left: calc(50% - 20%);
-    @media (max-width: $xl) {
-      width: 60%;
-      margin-left: calc(50% - 30%);
-    }
-    @media (max-width: $m) {
-      width: 70%;
-      margin-left: calc(50% - 35%);
-    }
-    h1 {
-      font-family: $mainfont;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: $superlarge;
-      color: $pink;
-      text-align: center;
-      text-shadow: 1px 1px $textshadowcolor;
-      @media (max-width: $s) {
-        font-size: $extralarge;
-        margin-top: 2%;
-      }
-    }
-    p {
-      font-family: $mainfont;
+    margin-left: calc(50% - 25%);
+    .icon {
       display: inline-block;
-      padding-top: 3%;
-      font-size: $paragraph;
-      color: $grey;
-      text-shadow: 1px 1px $textshadowcolor;
-      text-align: center;
-      @media (max-width: $s) {
-        padding-top: 10%;
-        font-size: $h2;
-      }
-    }
-  }
-  .count__down {
-    width: 40%;
-    margin-left: calc(50% - 20%);
-    padding-top: 4%;
-    text-shadow: 1px 1px $textshadowcolor;
-    @media (max-width: $xl) {
-      width: 60%;
-      margin-left: calc(50% - 30%);
-    }
-    @media (max-width: $m) {
-      width: 70%;
-      margin-left: calc(50% - 35%);
-    }
-    .time {
-      width: calc(100% / 4);
-      float: left;
-      text-align: center;
-      color: $pink;
-      font-size: $large;
-      font-family: $mainfont;
-      font-weight: bold;
-      padding: 1%;
-      @media (max-width: $s) {
-        padding-top: 8%;
-        font-size: $extralarge;
-      }
-    }
-    .time__details {
-      width: calc(100% / 4);
-      float: left;
-      text-align: center;
-      color: $pink;
-      font-size: $small;
-      padding: 2%;
-      font-family: $mainfont;
-      text-transform: uppercase;
-      @media (max-width: $s) {
-        padding-top: 5%;
-        font-size: $paragraph;
-      }
-    }
-  }
-  .form__email {
-    width: 40%;
-    height: 25%;
-    margin-left: calc(50% - 20%);
-    text-align: center;
-    padding-top: 6.5%;
-    font-family: $mainfont;
-    @media (max-width: $xl) {
-      width: 60%;
-      margin-left: calc(50% - 30%);
-      padding-top: 10%;
-    }
-    @media (max-width: $l) {
-      padding-top: 12%;
-    }
-    @media (max-width: $m) {
-      width: 70%;
-      margin-left: calc(50% - 35%);
-      padding-top: 15%;
-    }
-    @media (max-width: $s) {
-      padding-top: 25%;
-    }
-    input {
-      padding: 1%;
-      background: transparent;
-      border-bottom: 1px solid white;
       width: 100%;
-      &::placeholder {
-        font-size: $medium;
-        color: white;
-        opacity: 1;
-        @media (max-width: $s) {
-            font-size: $paragraph;
-          }
-      }
-    }
-  }
-  .submit__button {
-    width: 40%;
-    height: 12%;
-    margin-left: calc(50% - 20%);
-    text-align: center;
-    color: $pink;
-    font-family: $mainfont;
-    @media (max-width: $xl) {
-      width: 60%;
-      margin-left: calc(50% - 30%);
-    }
-    @media (max-width: $m) {
-      width: 70%;
-      margin-left: calc(50% - 35%);
-    }
-    @media (max-width: $s) {
-      padding-top: 3%;
-    }
-    button {
-      width: 27%;
-      border-radius: 3px;
-      background-color: $pink;
+      height: 13%;
       text-align: center;
-      color: white;
-      padding: 1.8%;
-      font-size: $medium;
-      box-shadow: 0px 5px 3px 0px rgba(104, 100, 100, 0.4);
-      @media (max-width: $s) {
-        width: 40%;
-        font-size: $h2;
+      i {
+        text-shadow: 1px 1px $textshadowcolor;
+        font-size: 60px;
+        color: $pink;
       }
     }
-  }
-  .mouse__animation {
-    width: 40%;
-    height: 10%;
-    margin-left: calc(50% - 20%);
-    text-align: center;
-    @media (max-width: $xl) {
-      width: 60%;
-      margin-left: calc(50% - 30%);
-    }
-    @media (max-width: $m) {
-      width: 70%;
-      margin-left: calc(50% - 35%);
-    }
-    .mouse {
-      width: 30px;
-      height: 50px;
-      margin-left: calc(50% - 15px);
-      border: 3px solid white;
-      border-radius: 45%;
-      .mouse__detail {
+    .intro {
+      width: 100%;
+      h1 {
+        font-family: $mainfont;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: $superlarge;
+        color: $pink;
+        text-align: center;
+        text-shadow: 1px 1px $textshadowcolor;
+      }
+      p {
+        font-family: $mainfont;
         display: inline-block;
-        width: 3px;
-        height: 6px;
-        border-radius: 2px;
-        background-color: #fff;
-        margin-top: 5px;
-        animation-name: mouse;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        &:hover {
-          animation-play-state: paused;
+        padding-top: 4%;
+        font-size: $paragraph;
+        color: $grey;
+        text-shadow: 1px 1px $textshadowcolor;
+        text-align: center;
+      }
+    }
+    .count__down {
+      width: 80%;
+      margin-left: calc(50% - 40%);
+      margin-top: 5%;
+      text-shadow: 1px 1px $textshadowcolor;
+      .time {
+        width: calc(100% / 4);
+        float: left;
+        text-align: center;
+        color: $pink;
+        font-size: $large;
+        font-family: $mainfont;
+        font-weight: bold;
+        padding: 1%;
+      }
+      .time__details {
+        width: calc(100% / 4);
+        float: left;
+        text-align: center;
+        color: $pink;
+        font-size: $small;
+        padding: 2%;
+        font-family: $mainfont;
+        text-transform: uppercase;
+      }
+    }
+    .form__email {
+      width: 80%;
+      height: 25%;
+      margin-left: calc(50% - 40%);
+      text-align: center;
+      margin-top: 2%;
+      padding-top: 10%;
+      display: inline-block;
+      font-family: $mainfont;
+      input {
+        padding: 1%;
+        background: transparent;
+        border-bottom: 1px solid white;
+        width: 100%;
+        &::placeholder {
+          font-size: $medium;
+          color: white;
+          opacity: 1;
         }
-        @keyframes mouse {
-          0% {
-            margin-top: 5px;
+      }
+    }
+    .submit__button {
+      width: 100%;
+      height: 12%;
+      text-align: center;
+      color: $pink;
+      font-family: $mainfont;
+      button {
+        width: 22%;
+        border-radius: 3px;
+        background-color: $pink;
+        text-align: center;
+        color: white;
+        padding: 1.8%;
+        font-size: $medium;
+        box-shadow: 0px 5px 3px 0px rgba(104, 100, 100, 0.4);
+      }
+    }
+    .mouse__animation {
+      width: 100%;
+      height: 10%;
+      text-align: center;
+      .mouse {
+        width: 30px;
+        height: 50px;
+        margin-left: calc(50% - 15px);
+        border: 3px solid white;
+        border-radius: 45%;
+        .mouse__detail {
+          display: inline-block;
+          width: 3px;
+          height: 6px;
+          border-radius: 2px;
+          background-color: #fff;
+          margin-top: 5px;
+          animation-name: mouse;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          &:hover {
+            animation-play-state: paused;
           }
-          50% {
-            background-color: white;
-          }
-          100% {
-            margin-top: 20px;
-            background-color: rgba(0, 0, 0, 0);
+          @keyframes mouse {
+            0% {
+              margin-top: 5px;
+            }
+            50% {
+              background-color: white;
+            }
+            100% {
+              margin-top: 20px;
+              background-color: rgba(0, 0, 0, 0);
+            }
           }
         }
       }
