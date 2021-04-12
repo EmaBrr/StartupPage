@@ -131,6 +131,7 @@
         background: transparent;
         border-bottom: 1px solid white;
         width: 100%;
+        -webkit-appearance: none;
         color: rgb(95, 95, 95);
         @media (max-width: $l) {
           padding: 4px 0px;

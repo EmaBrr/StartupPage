@@ -279,6 +279,7 @@ h6 {
   background: transparent;
   border-bottom: 1px solid white;
   width: 100%;
+  -webkit-appearance: none;
   color: #5f5f5f;
 }
 
@@ -417,26 +418,38 @@ h6 {
   width: 100%;
   height: 80vh;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1250px) {
+  .main {
+    height: auto;
+  }
 }
 
 .main .main__wrapper {
   width: 90%;
-  height: 88%;
-  margin-left: calc(50% - 45%);
-  margin-top: 5%;
+  padding: 30px;
 }
 
 .main .main__wrapper .left__main {
   width: 55%;
-  height: 100%;
   float: left;
 }
 
+@media (max-width: 1250px) {
+  .main .main__wrapper .left__main {
+    float: none;
+    width: 100%;
+  }
+}
+
 .main .main__wrapper .left__main .about {
-  width: 80%;
-  height: 30%;
+  width: 90%;
   margin-top: 30px;
-  margin-left: calc(50% - 40%);
+  margin-left: calc(50% - 45%);
 }
 
 .main .main__wrapper .left__main .about h2 {
@@ -444,34 +457,33 @@ h6 {
   color: black;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  padding: 15px 0px;
 }
 
 .main .main__wrapper .left__main .about p {
   display: inline-block;
-  padding-top: 5%;
+  padding: 15px 0px;
   font-size: 2.5vmin;
   color: #bfbfbf;
   font-family: "Raleway", sans-serif;
 }
 
 .main .main__wrapper .left__main .graph {
-  width: 80%;
-  height: 60%;
+  width: 90%;
   font-size: 2vmin;
-  margin-left: calc(50% - 40%);
+  margin-left: calc(50% - 45%);
   color: #bfbfbf;
 }
 
 .main .main__wrapper .left__main .graph .container {
-  padding-top: 2%;
+  padding: 23px 0px;
   width: 100%;
-  height: 25%;
 }
 
 .main .main__wrapper .left__main .graph .container .top {
   display: inline-block;
   width: 100%;
-  height: 35%;
+  padding: 5px 0px;
 }
 
 .main .main__wrapper .left__main .graph .container .top .label {
@@ -487,20 +499,17 @@ h6 {
 .main .main__wrapper .left__main .graph .container .bottom {
   display: inline-block;
   width: 100%;
-  height: 22%;
+  max-height: 20px;
   background-color: #e9e9e9;
 }
 
-.main .main__wrapper .left__main .graph .container .bottom .bar {
+.main .main__wrapper .left__main .graph .container .bottom .bar, .main .main__wrapper .left__main .graph .container .bottom .bar .loader {
   display: inline-block;
-  height: 100%;
-  width: 80%;
+  max-height: 20px;
 }
 
 .main .main__wrapper .left__main .graph .container .bottom .bar .loader {
-  display: inline-block;
-  width: 0;
-  height: 100%;
+  height: 19px;
   background-color: #61a7a7;
   animation: loading 5s forwards;
 }
@@ -516,13 +525,17 @@ h6 {
 
 .main .main__wrapper .right__main {
   width: 45%;
-  height: 100%;
   display: inline-block;
+}
+
+@media (max-width: 1250px) {
+  .main .main__wrapper .right__main {
+    width: 100%;
+  }
 }
 
 .main .main__wrapper .right__main .questions {
   width: 90%;
-  height: 30%;
   margin-top: 30px;
   margin-left: calc(50% - 45%);
 }
@@ -532,6 +545,7 @@ h6 {
   color: black;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  padding: 15px 0px;
 }
 
 .main .main__wrapper .right__main .questions p {
@@ -540,11 +554,11 @@ h6 {
   font-size: 2.5vmin;
   color: #bfbfbf;
   font-family: "Raleway", sans-serif;
+  padding: 15px 0px;
 }
 
 .main .main__wrapper .right__main .form__questions {
   width: 90%;
-  height: 60%;
   font-size: 2vmin;
   margin-left: calc(50% - 45%);
   color: #bfbfbf;
@@ -554,14 +568,29 @@ h6 {
 .main .main__wrapper .right__main .form__questions .name {
   float: left;
   width: 50%;
-  padding: 2%;
-  margin-top: 3%;
+  padding-top: 45px;
+}
+
+@media (max-width: 720px) {
+  .main .main__wrapper .right__main .form__questions .name {
+    float: none;
+    width: 100%;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .name input {
-  padding: 1%;
+  padding: 3px;
+  width: 95%;
+  -webkit-appearance: none;
   background: transparent;
   border-bottom: 1px solid #bfbfbf;
+  font-size: 2vmin;
+}
+
+@media (max-width: 720px) {
+  .main .main__wrapper .right__main .form__questions .name input {
+    width: 100%;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .name input::placeholder {
@@ -573,15 +602,29 @@ h6 {
 .main .main__wrapper .right__main .form__questions .email {
   float: left;
   width: 50%;
-  padding: 2%;
-  margin-top: 3%;
+  padding-top: 45px;
+}
+
+@media (max-width: 720px) {
+  .main .main__wrapper .right__main .form__questions .email {
+    float: none;
+    width: 100%;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .email input {
-  padding: 1%;
+  padding: 3px;
   background: transparent;
   border-bottom: 1px solid #bfbfbf;
-  width: 100%;
+  width: 95%;
+  -webkit-appearance: none;
+  font-size: 2vmin;
+}
+
+@media (max-width: 720px) {
+  .main .main__wrapper .right__main .form__questions .email input {
+    width: 100%;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .email input::placeholder {
@@ -592,15 +635,38 @@ h6 {
 
 .main .main__wrapper .right__main .form__questions .message {
   width: 100%;
-  margin-top: 10%;
-  padding: 2%;
+  margin-top: 50px;
   display: inline-block;
 }
 
+@media (max-width: 720px) {
+  .main .main__wrapper .right__main .form__questions .message {
+    padding-top: 45px;
+    margin-top: 0px;
+  }
+}
+
 .main .main__wrapper .right__main .form__questions .message textarea {
+  -webkit-appearance: none;
   border-bottom: 1px solid #bfbfbf;
-  width: 98%;
-  height: 100px;
+  width: 100%;
+  min-height: 150px;
+  font-size: 2vmin;
+  resize: none;
+}
+
+@media (max-width: 1250px) {
+  .main .main__wrapper .right__main .form__questions .message textarea {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main .main__wrapper .right__main .form__questions .message textarea {
+    float: none;
+    width: 100%;
+    min-height: 50px;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .message textarea::placeholder {
@@ -610,12 +676,24 @@ h6 {
 }
 
 .main .main__wrapper .right__main .form__questions .send__button {
-  margin-top: 7%;
-  padding: 2%;
+  margin-top: 15px;
+  padding: 3px;
   width: 100%;
   text-align: right;
   color: #ff9797;
   font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 1250px) {
+  .main .main__wrapper .right__main .form__questions .send__button {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main .main__wrapper .right__main .form__questions .send__button {
+    text-align: center;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .send__button button {
@@ -623,9 +701,15 @@ h6 {
   background-color: #ff9797;
   text-align: center;
   color: white;
-  padding: 1.8%;
+  padding: 15px 20px;
   font-size: 2vmin;
   box-shadow: 0px 5px 3px 0px rgba(104, 100, 100, 0.4);
+}
+
+@media (max-width: 720px) {
+  .main .main__wrapper .right__main .form__questions .send__button button {
+    font-size: 2.5vmin;
+  }
 }
 
 span {
