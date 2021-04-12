@@ -3,9 +3,6 @@ footer {
   height: 35vh;
   display: inline-block;
   background-color: $mintcolor;
-  @media (max-width: $xs) {
-    height: 25vh;
-  }
   .footer__wrapper {
     width: 80%;
     height: 85%;
@@ -13,10 +10,6 @@ footer {
     margin-left: calc(50% - 40%);
     display: inline-block;
     font-family: $mainfont;
-    @media (max-width: $s) {
-      width: 90%;
-      margin-left: calc(50% - 45%);
-    }
     .social__networks {
       width: 90%;
       height: 30%;
@@ -26,16 +19,10 @@ footer {
       margin-top: 1%;
       border-bottom: 1px solid white;
       font-size: $paragraph;
-      @media (max-width: $s) {
-        height: 20%;
-      }
       .social {
         color: white;
         padding: 1.5%;
         font-size: 30px;
-        @media (max-width: $s) {
-          font-size: 20px;
-        }
       }
     }
     .company__name {
@@ -45,23 +32,10 @@ footer {
       margin-left: calc(50% - 45%);
       text-align: center;
       margin-top: 1%;
-      @media (max-width: $s) {
-        height: 20%;
-      }
-      @media (max-width: $xs) {
-        height: 35%;
-      }
       i {
         font-size: 50px;
         padding: 1.2%;
         color: white;
-        @media (max-width: $s) {
-          font-size: 40px;
-        }
-        @media (max-width: $xs) {
-          font-size: 30px;
-          padding: 2%;
-        }
       }
     }
     .copyrights {
@@ -72,10 +46,6 @@ footer {
       color: white;
       font-family: $mainfont;
       font-size: $small;
-      @media (max-width: $s) {
-        width: 80%;
-        margin-left: calc(50% - 40%);
-      }
     }
     .text__box {
       width: calc(100% / 3);
@@ -85,9 +55,6 @@ footer {
       letter-spacing: 1px;
       font-family: $mainfont;
       font-size: $small;
-      @media (max-width: $s) {
-        min-width: 50px;
-      }
     }
     .more__info {
       width: 80%;
