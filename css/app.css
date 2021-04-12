@@ -719,15 +719,15 @@ span {
 
 footer {
   width: 100%;
-  height: 35vh;
+  height: auto;
   display: inline-block;
   background-color: #61a7a7;
 }
 
 footer .footer__wrapper {
   width: 80%;
-  height: 85%;
-  margin-top: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   margin-left: calc(50% - 40%);
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -735,61 +735,86 @@ footer .footer__wrapper {
 
 footer .footer__wrapper .social__networks {
   width: 90%;
-  height: 30%;
   display: inline-block;
   margin-left: calc(50% - 45%);
   text-align: center;
-  margin-top: 1%;
   border-bottom: 1px solid white;
   font-size: 2.5vmin;
+  padding: 10px 0px;
 }
 
 footer .footer__wrapper .social__networks .social {
   color: white;
-  padding: 1.5%;
+  padding: 20px;
   font-size: 30px;
+  width: 70px;
+}
+
+@media (max-width: 720px) {
+  footer .footer__wrapper .social__networks .social {
+    font-size: 18px;
+    width: 35px;
+    padding: 8px;
+  }
+}
+
+footer .footer__wrapper .social__networks .social:hover {
+  background-color: white;
+  color: #61a7a7;
+  border-radius: 50px;
+}
+
+@media (max-width: 720px) {
+  footer .footer__wrapper .social__networks .social:hover {
+    pointer-events: none;
+  }
 }
 
 footer .footer__wrapper .company__name {
   width: 90%;
-  height: 30%;
   display: inline-block;
   margin-left: calc(50% - 45%);
   text-align: center;
-  margin-top: 1%;
+  margin-top: 2px;
 }
 
 footer .footer__wrapper .company__name i {
   font-size: 50px;
-  padding: 1.2%;
+  padding: 20px;
   color: white;
+}
+
+@media (max-width: 1250px) {
+  footer .footer__wrapper .company__name i {
+    font-size: 40px;
+  }
 }
 
 footer .footer__wrapper .copyrights {
-  width: 55%;
-  height: 10%;
+  width: 90%;
+  margin-left: calc(50% - 45%);
   display: inline-block;
-  margin-left: calc(50% - 27.5%);
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 1.5vmin;
+  text-align: center;
 }
 
 footer .footer__wrapper .text__box {
-  width: calc(100% / 3);
+  width: 100%;
   min-width: 150px;
   float: left;
-  padding: 1%;
+  padding: 15px 0px;
   letter-spacing: 1px;
   font-family: "Raleway", sans-serif;
   font-size: 1.5vmin;
 }
 
 footer .footer__wrapper .more__info {
-  width: 80%;
-  margin-top: 2%;
+  width: 90%;
   text-align: center;
-  margin-left: calc(50% - 40%);
+  margin-left: calc(50% - 45%);
+  padding: 15px 0px;
   color: white;
   font-size: 1.5vmin;
   letter-spacing: 1px;
