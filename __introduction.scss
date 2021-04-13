@@ -140,6 +140,7 @@
         border-bottom: 1px solid white;
         width: 100%;
         -webkit-appearance: none;
+        border-radius: 0;
         color: rgb(95, 95, 95);
         @media (max-width: $l) {
           padding: 4px 0px;
