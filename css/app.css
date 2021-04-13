@@ -117,6 +117,13 @@ h6 {
   }
 }
 
+@media (orientation: landscape) {
+  .introduction .introduction__wrapper {
+    width: 90%;
+    margin-left: calc(50% - 45%);
+  }
+}
+
 .introduction .introduction__wrapper .icon {
   display: inline-block;
   width: 100%;
@@ -169,6 +176,12 @@ h6 {
   }
 }
 
+@media (orientation: landscape) {
+  .introduction .introduction__wrapper .intro h1 {
+    font-size: 13vmin;
+  }
+}
+
 .introduction .introduction__wrapper .intro p {
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -190,6 +203,12 @@ h6 {
   .introduction .introduction__wrapper .intro p {
     font-size: 5vmin;
     padding: 15px;
+  }
+}
+
+@media (orientation: landscape) {
+  .introduction .introduction__wrapper .intro p {
+    font-size: 7vmin;
   }
 }
 
@@ -242,6 +261,12 @@ h6 {
   }
 }
 
+@media (orientation: landscape) {
+  .introduction .introduction__wrapper .count__down .time {
+    font-size: 13vmin;
+  }
+}
+
 .introduction .introduction__wrapper .count__down .time__details {
   width: calc(100% / 4);
   float: left;
@@ -262,6 +287,12 @@ h6 {
 @media (max-width: 400px) {
   .introduction .introduction__wrapper .count__down .time__details {
     font-size: 2.5vmin;
+  }
+}
+
+@media (orientation: landscape) {
+  .introduction .introduction__wrapper .count__down .time__details {
+    font-size: 3.5vmin;
   }
 }
 
@@ -304,6 +335,12 @@ h6 {
   }
 }
 
+@media (orientation: landscape) {
+  .introduction .introduction__wrapper .form__email input {
+    border-bottom: 1px solid #bfbfbf;
+  }
+}
+
 .introduction .introduction__wrapper .form__email input::placeholder {
   font-size: 2vmin;
   color: white;
@@ -319,6 +356,13 @@ h6 {
 @media (max-width: 400px) {
   .introduction .introduction__wrapper .form__email input::placeholder {
     font-size: 3.5vmin;
+  }
+}
+
+@media (orientation: landscape) {
+  .introduction .introduction__wrapper .form__email input::placeholder {
+    font-size: 4.5vmin;
+    color: #bfbfbf;
   }
 }
 
@@ -356,6 +400,12 @@ h6 {
   .introduction .introduction__wrapper .submit__button button {
     font-size: 3.5vmin;
     padding: 10px 15px;
+  }
+}
+
+@media (orientation: landscape) {
+  .introduction .introduction__wrapper .submit__button button {
+    font-size: 4.5vmin;
   }
 }
 
@@ -467,12 +517,24 @@ h6 {
   margin-left: calc(50% - 45%);
 }
 
+@media (orientation: landscape) {
+  .main .main__wrapper .left__main .about {
+    width: 100%;
+  }
+}
+
 .main .main__wrapper .left__main .about h2 {
   font-size: 3.5vmin;
   color: black;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   padding: 15px 0px;
+}
+
+@media (orientation: landscape) {
+  .main .main__wrapper .left__main .about h2 {
+    font-size: 6vmin;
+  }
 }
 
 .main .main__wrapper .left__main .about p {
@@ -483,11 +545,23 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+@media (orientation: landscape) {
+  .main .main__wrapper .left__main .about p {
+    font-size: 4.5vmin;
+  }
+}
+
 .main .main__wrapper .left__main .graph {
   width: 90%;
   font-size: 2vmin;
   margin-left: calc(50% - 45%);
   color: #bfbfbf;
+}
+
+@media (orientation: landscape) {
+  .main .main__wrapper .left__main .graph {
+    font-size: 3.5vmin;
+  }
 }
 
 .main .main__wrapper .left__main .graph .container {
@@ -563,6 +637,12 @@ h6 {
   padding: 15px 0px;
 }
 
+@media (orientation: landscape) {
+  .main .main__wrapper .right__main .questions h2 {
+    font-size: 6vmin;
+  }
+}
+
 .main .main__wrapper .right__main .questions p {
   display: inline-block;
   padding-top: 5%;
@@ -570,6 +650,12 @@ h6 {
   color: #bfbfbf;
   font-family: "Raleway", sans-serif;
   padding: 15px 0px;
+}
+
+@media (orientation: landscape) {
+  .main .main__wrapper .right__main .questions p {
+    font-size: 4.5vmin;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions {
@@ -609,10 +695,22 @@ h6 {
   }
 }
 
+@media (orientation: landscape) {
+  .main .main__wrapper .right__main .form__questions .name input {
+    font-size: 4.5vmin;
+  }
+}
+
 .main .main__wrapper .right__main .form__questions .name input::placeholder {
   font-size: 2vmin;
   color: #bfbfbf;
   opacity: 1;
+}
+
+@media (orientation: landscape) {
+  .main .main__wrapper .right__main .form__questions .name input::placeholder {
+    font-size: 4.5vmin;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .email {
@@ -644,10 +742,22 @@ h6 {
   }
 }
 
+@media (orientation: landscape) {
+  .main .main__wrapper .right__main .form__questions .email input {
+    font-size: 4.5vmin;
+  }
+}
+
 .main .main__wrapper .right__main .form__questions .email input::placeholder {
   font-size: 2vmin;
   color: #bfbfbf;
   opacity: 1;
+}
+
+@media (orientation: landscape) {
+  .main .main__wrapper .right__main .form__questions .email input::placeholder {
+    font-size: 4.5vmin;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .message {
@@ -667,6 +777,7 @@ h6 {
   -webkit-appearance: none;
   border-bottom: 1px solid #bfbfbf;
   width: 100%;
+  border-radius: 0px;
   min-height: 150px;
   font-size: 2vmin;
   resize: none;
@@ -686,10 +797,22 @@ h6 {
   }
 }
 
+@media (orientation: landscape) {
+  .main .main__wrapper .right__main .form__questions .message textarea {
+    font-size: 4.5vmin;
+  }
+}
+
 .main .main__wrapper .right__main .form__questions .message textarea::placeholder {
   font-size: 2vmin;
   color: #bfbfbf;
   opacity: 1;
+}
+
+@media (orientation: landscape) {
+  .main .main__wrapper .right__main .form__questions .message textarea::placeholder {
+    font-size: 4.5vmin;
+  }
 }
 
 .main .main__wrapper .right__main .form__questions .send__button {
@@ -751,6 +874,12 @@ h6 {
   }
 }
 
+@media (orientation: landscape) {
+  .main .main__wrapper .right__main .form__questions .send__button button {
+    font-size: 4.5vmin;
+  }
+}
+
 span {
   color: #ff9797;
   font-family: "Raleway", sans-serif;
@@ -771,6 +900,13 @@ footer .footer__wrapper {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   position: relative;
+}
+
+@media (orientation: landscape) {
+  footer .footer__wrapper {
+    width: 90%;
+    margin-left: calc(50% - 45%);
+  }
 }
 
 footer .footer__wrapper .arrow__up {
@@ -919,11 +1055,16 @@ footer .footer__wrapper .copyrights {
 footer .footer__wrapper .text__box {
   width: 100%;
   min-width: 150px;
-  float: left;
   padding: 15px 0px;
   letter-spacing: 1px;
   font-family: "Raleway", sans-serif;
   font-size: 1.5vmin;
+}
+
+@media (orientation: landscape) {
+  footer .footer__wrapper .text__box {
+    font-size: 4.5vmin;
+  }
 }
 
 footer .footer__wrapper .more__info {
@@ -935,6 +1076,12 @@ footer .footer__wrapper .more__info {
   font-size: 1.5vmin;
   letter-spacing: 1px;
   font-family: "Raleway", sans-serif;
+}
+
+@media (orientation: landscape) {
+  footer .footer__wrapper .more__info {
+    font-size: 4.5vmin;
+  }
 }
 
 html {

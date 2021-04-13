@@ -18,6 +18,10 @@
       width: 86%;
       margin-left: calc(50% - 43%);
     }
+    @media (orientation: landscape) {
+      width: 90%;
+      margin-left: calc(50% - 45%);
+    }
     .icon {
       display: inline-block;
       width: 100%;
@@ -52,6 +56,9 @@
         @media (max-width: $s) {
           font-size: 11vmin;
         }
+        @media (orientation: landscape) {
+          font-size: $landscape;
+        }
       }
       p {
         width: 100%;
@@ -69,6 +76,9 @@
           font-size: 5vmin;
           padding: 15px;
         }
+        @media (orientation: landscape) {
+          font-size: $superlarge;
+        }
       }
     }
     .count__down {
@@ -81,7 +91,7 @@
       }
       @media (max-width: $m) {
         width: 90%;
-      margin-left: calc(50% - 45%);
+        margin-left: calc(50% - 45%);
       }
       .time {
         width: calc(100% / 4);
@@ -101,6 +111,9 @@
         @media (max-width: $s) {
           font-size: 10vmin;
         }
+        @media (orientation: landscape) {
+          font-size: $landscape;
+        }
       }
       .time__details {
         width: calc(100% / 4);
@@ -117,6 +130,9 @@
         @media (max-width: $s) {
           font-size: $paragraph;
         }
+        @media (orientation: landscape) {
+          font-size: $h2;
+        }
       }
     }
     .form__email {
@@ -132,7 +148,7 @@
       }
       @media (max-width: $m) {
         width: 90%;
-      margin-left: calc(50% - 45%);
+        margin-left: calc(50% - 45%);
       }
       input {
         padding: 5px 0px;
@@ -145,6 +161,9 @@
         @media (max-width: $l) {
           padding: 4px 0px;
         }
+        @media (orientation: landscape){
+          border-bottom: 1px solid $grey;
+        }
         &::placeholder {
           font-size: $medium;
           color: white;
@@ -154,6 +173,10 @@
           }
           @media (max-width: $s) {
             font-size: $h2;
+          }
+          @media (orientation: landscape){
+            font-size: $h1;
+            color: $grey;
           }
         }
       }
@@ -181,6 +204,9 @@
         @media (max-width: $s) {
           font-size: $h2;
           padding: 10px 15px;
+        }
+        @media (orientation: landscape) {
+          font-size: $h1;
         }
       }
     }
@@ -217,7 +243,7 @@
           animation-iteration-count: infinite;
           @media (max-width: $s) {
             width: 3px;
-          height: 4px;
+            height: 4px;
           }
           &:hover {
             animation-play-state: paused;

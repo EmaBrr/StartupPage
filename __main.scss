@@ -22,12 +22,18 @@
         width: 90%;
         margin-top: 30px;
         margin-left: calc(50% - 45%);
+        @media (orientation: landscape) {
+          width: 100%;
+        }
         h2 {
           font-size: $h2;
           color: black;
           font-family: $mainfont;
           text-transform: uppercase;
           padding: 15px 0px;
+          @media (orientation: landscape) {
+            font-size: $large;
+          }
         }
         p {
           display: inline-block;
@@ -35,6 +41,9 @@
           font-size: $paragraph;
           color: $grey;
           font-family: $mainfont;
+          @media (orientation: landscape) {
+            font-size: $h1;
+          }
         }
       }
       .graph {
@@ -42,6 +51,9 @@
         font-size: $medium;
         margin-left: calc(50% - 45%);
         color: $grey;
+        @media (orientation: landscape) {
+          font-size: $h2;
+        }
         .container {
           padding: 23px 0px;
           width: 100%;
@@ -101,6 +113,9 @@
           font-family: $mainfont;
           text-transform: uppercase;
           padding: 15px 0px;
+          @media (orientation: landscape) {
+            font-size: $large;
+          }
         }
         p {
           display: inline-block;
@@ -109,6 +124,9 @@
           color: $grey;
           font-family: $mainfont;
           padding: 15px 0px;
+          @media (orientation: landscape) {
+            font-size: $h1;
+          }
         }
       }
       .form__questions {
@@ -136,10 +154,16 @@
             @media (max-width: $m) {
               width: 100%;
             }
+            @media (orientation: landscape) {
+              font-size: $h1;
+            }
             &::placeholder {
               font-size: $medium;
               color: $grey;
               opacity: 1;
+              @media (orientation: landscape) {
+                font-size: $h1;
+              }
             }
           }
         }
@@ -162,10 +186,16 @@
             @media (max-width: $m) {
               width: 100%;
             }
+            @media (orientation: landscape) {
+              font-size: $h1;
+            }
             &::placeholder {
               font-size: $medium;
               color: $grey;
               opacity: 1;
+              @media (orientation: landscape) {
+                font-size: $h1;
+              }
             }
           }
         }
@@ -181,6 +211,7 @@
             -webkit-appearance: none;
             border-bottom: 1px solid $grey;
             width: 100%;
+            border-radius: 0px;
             min-height: 150px;
             font-size: $medium;
             resize: none;
@@ -192,10 +223,16 @@
               width: 100%;
               min-height: 50px;
             }
+            @media (orientation: landscape) {
+              font-size: $h1;
+            }
             &::placeholder {
               font-size: $medium;
               color: $grey;
               opacity: 1;
+              @media (orientation: landscape) {
+                font-size: $h1;
+              }
             }
           }
         }
@@ -235,6 +272,9 @@
             @media (max-width: $s) {
               font-size: $h2;
               padding: 10px 15px;
+            }
+            @media (orientation: landscape) {
+              font-size: $h1;
             }
           }
         }

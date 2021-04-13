@@ -11,6 +11,10 @@ footer {
     display: inline-block;
     font-family: $mainfont;
     position: relative;
+    @media (orientation: landscape){
+      width: 90%;
+      margin-left: calc(50% - 45%);
+    }
     .arrow__up {
       width: 70px;
       height: 70px;
@@ -116,11 +120,13 @@ footer {
     .text__box {
       width: 100%;
       min-width: 150px;
-      float: left;
       padding: 15px 0px;
       letter-spacing: 1px;
       font-family: $mainfont;
       font-size: $small;
+      @media (orientation: landscape) {
+        font-size: $h1;
+      }
     }
     .more__info {
       width: 90%;
@@ -131,6 +137,9 @@ footer {
       font-size: $small;
       letter-spacing: 1px;
       font-family: $mainfont;
+      @media (orientation: landscape) {
+        font-size: $h1;
+      }
     }
   }
 }
