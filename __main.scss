@@ -206,9 +206,18 @@
           font-family: $mainfont;
           @media (max-width: $l2) {
             margin-top: 25px;
+            padding-bottom: 60px;
+          }
+          @media (max-width: $l) {
+            padding-bottom: 50px;
           }
           @media (max-width: $m) {
             text-align: center;
+            padding-bottom: 40px;
+          }
+          @media (max-width: $s) {
+            text-align: center;
+            padding-bottom: 35px;
           }
           button {
             border-radius: 3px;
