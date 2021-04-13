@@ -1010,6 +1010,14 @@ footer .footer__wrapper .social__networks .social {
   }
 }
 
+@media (orientation: landscape) {
+  footer .footer__wrapper .social__networks .social {
+    font-size: 30px;
+    padding: 7px;
+    width: 70px;
+  }
+}
+
 footer .footer__wrapper .social__networks .social:hover {
   background-color: white;
   color: #61a7a7;
@@ -1039,6 +1047,13 @@ footer .footer__wrapper .company__name i {
 @media (max-width: 1250px) {
   footer .footer__wrapper .company__name i {
     font-size: 40px;
+  }
+}
+
+@media (orientation: landscape) {
+  footer .footer__wrapper .company__name i {
+    font-size: 50px;
+    padding: 10px;
   }
 }
 
