@@ -11,7 +11,7 @@ footer {
     display: inline-block;
     font-family: $mainfont;
     position: relative;
-    @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
       width: 90%;
       margin-left: calc(50% - 45%);
     }
@@ -83,7 +83,7 @@ footer {
           width: 35px;
           padding: 8px;
         }
-        @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+        @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
           font-size: 30px;
           padding: 7px;
           width: 70px;
@@ -111,7 +111,7 @@ footer {
         @media (max-width: $l2) {
           font-size: 40px;
         }
-        @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+        @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
           font-size: 50px;
           padding: 10px;
         }
@@ -133,7 +133,10 @@ footer {
       letter-spacing: 1px;
       font-family: $mainfont;
       font-size: $small;
-      @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      @media (max-width: $xl) {
+        font-size: $paragraph;
+      }
+      @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l) {
         font-size: $h1;
       }
     }
@@ -146,7 +149,10 @@ footer {
       font-size: $small;
       letter-spacing: 1px;
       font-family: $mainfont;
-      @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      @media (max-width: $xl) {
+        font-size: $paragraph;
+      }
+      @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l) {
         font-size: $h1;
       }
     }

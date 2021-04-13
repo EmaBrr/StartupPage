@@ -27,10 +27,10 @@ header {
     @media (max-width: $s) {
       font-size: $large;
     }
-    @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
-        text-align: center;
-        font-size: $h1;
-      }
+    @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
+      text-align: center;
+      font-size: $h1;
+    }
     a {
       display: inline-block;
       padding: 14px 30px;
@@ -38,7 +38,7 @@ header {
       @media screen and (max-width: $l) {
         display: none;
       }
-      @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+      @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
         display: inline-block;
       }
       &:hover {
@@ -51,7 +51,7 @@ header {
       @media screen and (max-width: $l) {
         display: inline-block;
       }
-      @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape){
+      @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
         display: none;
       }
     }

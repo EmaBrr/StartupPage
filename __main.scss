@@ -22,7 +22,7 @@
         width: 90%;
         margin-top: 30px;
         margin-left: calc(50% - 45%);
-        @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+        @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
           width: 100%;
         }
         h2 {
@@ -31,7 +31,7 @@
           font-family: $mainfont;
           text-transform: uppercase;
           padding: 15px 0px;
-          @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
             font-size: $large;
           }
         }
@@ -41,7 +41,7 @@
           font-size: $paragraph;
           color: $grey;
           font-family: $mainfont;
-          @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
             font-size: $h1;
           }
         }
@@ -51,7 +51,7 @@
         font-size: $medium;
         margin-left: calc(50% - 45%);
         color: $grey;
-        @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+        @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
           font-size: $h2;
         }
         .container {
@@ -113,7 +113,7 @@
           font-family: $mainfont;
           text-transform: uppercase;
           padding: 15px 0px;
-          @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
             font-size: $large;
           }
         }
@@ -124,7 +124,7 @@
           color: $grey;
           font-family: $mainfont;
           padding: 15px 0px;
-          @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
             font-size: $h1;
           }
         }
@@ -154,14 +154,14 @@
             @media (max-width: $m) {
               width: 100%;
             }
-            @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+            @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
               font-size: $h1;
             }
             &::placeholder {
               font-size: $medium;
               color: $grey;
               opacity: 1;
-              @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+              @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
                 font-size: $h1;
               }
             }
@@ -186,14 +186,14 @@
             @media (max-width: $m) {
               width: 100%;
             }
-            @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+            @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
               font-size: $h1;
             }
             &::placeholder {
               font-size: $medium;
               color: $grey;
               opacity: 1;
-              @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+              @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
                 font-size: $h1;
               }
             }
@@ -223,14 +223,14 @@
               width: 100%;
               min-height: 50px;
             }
-            @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+            @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
               font-size: $h1;
             }
             &::placeholder {
               font-size: $medium;
               color: $grey;
               opacity: 1;
-              @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+              @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
                 font-size: $h1;
               }
             }
@@ -273,7 +273,7 @@
               font-size: $h2;
               padding: 10px 15px;
             }
-            @media only screen and (min-device-width: $s) and (max-device-width: $xl) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+            @media (orientation: landscape) and (hover: none) and (pointer: coarse) and (max-width: $l){
               font-size: $h1;
             }
           }
