@@ -1,6 +1,6 @@
 .introduction {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: url(../img/GreenBuilding.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -9,7 +9,7 @@
     display: inline-block;
     width: 60%;
     margin-left: calc(50% - 30%);
-    padding: 2% 0px 0px 0px;
+    padding: 2% 0px;
     @media (max-width: $xl) {
       width: 70%;
       margin-left: calc(50% - 35%);
@@ -79,6 +79,10 @@
       @media (max-width: $l) {
         margin-top: 30px;
       }
+      @media (max-width: $m) {
+        width: 90%;
+      margin-left: calc(50% - 45%);
+      }
       .time {
         width: calc(100% / 4);
         float: left;
@@ -125,6 +129,10 @@
       font-family: $mainfont;
       @media (max-width: $s) {
         padding: 20px 0px;
+      }
+      @media (max-width: $m) {
+        width: 90%;
+      margin-left: calc(50% - 45%);
       }
       input {
         padding: 5px 0px;
